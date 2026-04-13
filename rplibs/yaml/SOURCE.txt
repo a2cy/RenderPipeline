@@ -1,4 +1,11 @@
+python 2
 package: PyYAML
 version: 3.11
 downloaded: 12-23-2015
+url: https://pypi.python.org/pypi/PyYAML
+
+python 3
+package: PyYAML
+version: 6.0.3
+downloaded: 14.04.26
 url: https://pypi.python.org/pypi/PyYAML
