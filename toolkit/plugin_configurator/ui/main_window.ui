@@ -57,7 +57,7 @@ QScrollBar:vertical {
 
 
                       QScrollBar::handle:vertical:hover {
-                        
+
 						background: #999;
 
                       }
@@ -1520,7 +1520,7 @@ a website or so.</string>
       <string notr="true">QPushButton {
 color: #eee;
 background: #666;
-border: 0; 
+border: 0;
 }
 
 QPushButton:hover {
@@ -1746,10 +1746,10 @@ QPushButton:pressed {
       </font>
      </property>
      <property name="styleSheet">
-      <string notr="true">border-top: 1px dotted #aaa; color: #999; padding: 0;</string>
+      <string notr="true">border-top: 1px dotted #aaa; color: #ff9719; padding: 0;</string>
      </property>
      <property name="text">
-      <string>Hint: Settings with a gray color require a pipeline restart when changed.</string>
+      <string>Hint: Settings with a orange color require a pipeline restart when changed.</string>
      </property>
      <property name="textFormat">
       <enum>Qt::PlainText</enum>

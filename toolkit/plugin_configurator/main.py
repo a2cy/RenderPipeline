@@ -59,7 +59,7 @@ class PluginConfigurator(QMainWindow, Ui_MainWindow):
     """ Interface to change the plugin settings """
 
     def __init__(self):
-        
+
 
         # Init mounts
         self._mount_mgr = MountManager(None)
@@ -216,8 +216,10 @@ class PluginConfigurator(QMainWindow, Ui_MainWindow):
             label.setWordWrap(True)
             label.setFont(label_font)
 
-            if not (handle.shader_runtime or handle.runtime ):
+            if handle.shader_runtime or handle.runtime:
                 label.setStyleSheet("color: #999;")
+            else:
+                label.setStyleSheet("color: #ff9719;")
 
             if handle.display_conditions:
                 label.setStyleSheet(label.styleSheet() + "padding-left: 10px;")
@@ -294,7 +296,7 @@ class PluginConfigurator(QMainWindow, Ui_MainWindow):
         self._do_update_setting(setting_id, value)
         # Assume objects are sliders, so we need to rescale the value
         for obj in bound_objs:
-            obj.setValue(value * 100000.0 if setting_type == "float" else value)
+            obj.setValue(int(value * 100000) if setting_type == "float" else value)
 
     def _choose_path(self, setting_id, setting_handle, bound_objs):
         """ Shows a file chooser to show an path from """
@@ -363,14 +365,14 @@ class PluginConfigurator(QMainWindow, Ui_MainWindow):
 
             if setting.type == "float":
                 box.setSingleStep(abs(setting.maxval - setting.minval) / 100.0)
-                slider.setMinimum(setting.minval * 100000.0)
-                slider.setMaximum(setting.maxval * 100000.0)
-                slider.setValue(setting.value * 100000.0)
+                slider.setMinimum(int(setting.minval * 100000))
+                slider.setMaximum(int(setting.maxval * 100000))
+                slider.setValue(int(setting.value * 100000))
             elif setting.type == "int":
-                box.setSingleStep(max(1, (setting.maxval - setting.minval) / 32))
-                slider.setMinimum(setting.minval)
-                slider.setMaximum(setting.maxval)
-                slider.setValue(setting.value)
+                box.setSingleStep(int(max(1, (setting.maxval - setting.minval) / 32)))
+                slider.setMinimum(int(setting.minval))
+                slider.setMaximum(int(setting.maxval))
+                slider.setValue(int(setting.value))
 
             layout.addWidget(box)
             layout.addWidget(slider)
