@@ -6,6 +6,13 @@
 
 Deferred Realtime Rendering Pipeline with Physically Based Shading for the <a href="http://github.com/panda3d/panda3d">Panda3D Game Engine</a>.
 
+
+## Attention
+
+This is my personal attempt at getting RenderPipeline to work on python 3.14 and panda3d 1.10.16.  
+Older versions of python/panda3d may not work.  
+
+
 ### Core Features
 
 - Physically Based Shading
@@ -19,21 +26,27 @@ Deferred Realtime Rendering Pipeline with Physically Based Shading for the <a hr
 You can click on the images to enlarge them. Besides of that, you can find many more screenshots in my <a href="https://www.dropbox.com/sh/dq4wu3g9jwjqnht/AAABSOPnglDHZYsG5HXR-mhWa" target="_blank">dropbox folder</a>.
 
 **Forest**
+
 <img src="http://i.imgur.com/fD88ZMU.png" />
 
 **Material demo**
+
 <img src="http://i.imgur.com/M5YtvYR.png" />
 
 **Screen space reflections**
+
 <img src="http://i.imgur.com/oOwLXAK.png" />
 
 **Car rendering**
+
 <img src="http://i.imgur.com/hFD4qjV.png" alt="Car rendering" />
 
 **Plugin and Time of Day editor:**
+
 <img src="http://i.imgur.com/a8VpiHS.png" />
 
 **Terrain and volumetric clouds**
+
 <img src="http://i.imgur.com/zE0ywPl.png" />
 
 
@@ -67,4 +80,3 @@ If you find bugs, or find information missing in the wiki, or want to contribute
 you can find me most of the time in the `#panda3d` channel on freenode.
 
 If I shouldn't be there, feel free to contact me per E-Mail: `tobias.springer1@googlemail.com`
-
