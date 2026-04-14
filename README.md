@@ -10,7 +10,7 @@ Deferred Realtime Rendering Pipeline with Physically Based Shading for the <a hr
 ## Attention
 
 This is my personal attempt at getting RenderPipeline to work on python 3.14 and panda3d 1.10.16.  
-Older versions of python/panda3d may not work.  
+Older versions of python/panda3d may not work and I'm not going to fix it.  
 
 
 ### Core Features
