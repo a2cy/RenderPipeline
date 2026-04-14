@@ -469,7 +469,7 @@ QScrollBar:vertical {
 
 
                       QScrollBar::handle:vertical:hover {
-                        
+
 						background: #999;
 
                       }
@@ -520,7 +520,7 @@ QScrollBar:vertical {
      <property name="font">
       <font>
        <family>Roboto</family>
-       <pointsize>-1</pointsize>
+       <pointsize>1</pointsize>
        <weight>37</weight>
        <bold>false</bold>
       </font>
@@ -545,7 +545,7 @@ QScrollBar:vertical {
       <string notr="true">QPushButton {
 color: #eee;
 background: #666;
-border: 0; 
+border: 0;
 }
 
 QPushButton:hover {
@@ -634,7 +634,7 @@ QPushButton:pressed {
       <string notr="true">QPushButton {
 color: #eee;
 background: #666;
-border: 0; 
+border: 0;
 }
 
 QPushButton:hover {
@@ -1037,7 +1037,7 @@ font-weight: 100;</string>
     <property name="font">
      <font>
       <family>Roboto</family>
-      <pointsize>-1</pointsize>
+      <pointsize>1</pointsize>
       <weight>37</weight>
       <bold>false</bold>
      </font>
@@ -1061,7 +1061,7 @@ font-weight: 100;</string>
     <property name="font">
      <font>
       <family>Roboto</family>
-      <pointsize>-1</pointsize>
+      <pointsize>1</pointsize>
       <weight>37</weight>
       <bold>false</bold>
      </font>

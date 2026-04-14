@@ -185,7 +185,7 @@ class DayTimeEditor(QMainWindow, Ui_MainWindow):
             widget.setText(1, formatted)
 
             if setting_handle.type == "color":
-                widget.setBackground(1, QBrush(QColor(*value)))
+                widget.setBackground(1, QBrush(QColor(*(int(v) for v in value))))
 
     def _on_curve_edited(self):
         """ Called when the curve got edited in the curve widget """
