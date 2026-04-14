@@ -1322,7 +1322,7 @@ a website or so.</string>
      <property name="font">
       <font>
        <family>Roboto</family>
-       <pointsize>-1</pointsize>
+       <pointsize>1</pointsize>
        <weight>37</weight>
        <bold>false</bold>
       </font>
@@ -1492,7 +1492,7 @@ a website or so.</string>
      <property name="font">
       <font>
        <family>Roboto</family>
-       <pointsize>-1</pointsize>
+       <pointsize>1</pointsize>
        <weight>37</weight>
        <bold>false</bold>
       </font>
@@ -1777,7 +1777,7 @@ QPushButton:pressed {
     <property name="font">
      <font>
       <family>Roboto</family>
-      <pointsize>-1</pointsize>
+      <pointsize>1</pointsize>
       <weight>37</weight>
       <bold>false</bold>
      </font>
